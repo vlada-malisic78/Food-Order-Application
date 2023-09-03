@@ -1,18 +1,15 @@
 {
-    "compilerOptions": {
-        "noEmit": true,
-        "lib": [
-            "dom",
-            "DOM.Iterable",
-            "ESNext"
-        ],
-        "moduleResolution": "node",
-        "allowSyntheticDefaultImports": true,
-        "esModuleInterop": true,
-        "jsx":"react",
-        "forceConsistentCasingInFileNames": true,
-        "strict":true
-    },
-    "include": ["src"],
-    "exclude": ["node_modules", "dist"]
+  "compilerOptions": {
+    "noEmit": true,
+    "lib": ["dom", "DOM.Iterable", "ESNext"],
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "forceConsistentCasingInFileNames": true,
+    "strict": false,
+    "typeRoots": ["src/types"]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
 }

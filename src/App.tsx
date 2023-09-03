@@ -1,9 +1,12 @@
 import React from 'react'
+import './index.scss'
+import Header from './components/Layout/Header';
+
 
 const App = () => {
     return (
         <div>
-            <h1>My React and Typescript</h1>
+            <Header />
         </div>
     )
 }

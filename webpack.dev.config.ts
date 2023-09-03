@@ -26,6 +26,18 @@ const config: Configuration = {
           },
         },
       },
+      {
+        test: /\.(sa|sc|c)ss$/,
+        use: [{ loader: 'style-loader' }, { loader: 'css-loader' }, { loader: 'sass-loader' }],
+      },
+      {
+        test: /\.(jpg|png|gif|jpeg)$/,
+        use: [{ loader: 'file-loader' }],
+      },
+      {
+        test: /\.svg$/,
+        use: ['@svgr/webpack', 'url-loader'],
+      },
     ],
   },
   resolve: {
@@ -41,7 +53,7 @@ const config: Configuration = {
   devServer: {
     static: path.join(__dirname, 'dist'),
     historyApiFallback: true,
-    port: 4000,
+    port: 4001,
     open: true,
     hot: true,
   },

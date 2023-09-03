@@ -1,2 +1,2 @@
-# test-app
-Test app for react typescript
+# Food Order App
+Application for food order
